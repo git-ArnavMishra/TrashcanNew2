@@ -53,7 +53,7 @@ function draw() {
   ball.r = 11;
   
   //Engine.update(engine);
-  //keyPressed();
+  keyPressed();
   if (ball.body.position.x >700){
 	Matter.Body.applyForce(ball.body,ball.body.position,{x:0.1,y:0.6}); 
   }
@@ -76,7 +76,7 @@ function draw() {
 }
 function keyPressed(){
 	if(keyCode == UP_ARROW){
-		Matter.Body.applyForce(ball.body,ball.body.position,{x:0.2,y:-0.45
+		Matter.Body.applyForce(ball.body,ball.body.position,{x:0.2,y:-2.45
 		});
 		
 	}
